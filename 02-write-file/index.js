@@ -18,6 +18,7 @@ async function writeToFile(text) {
 }
 
 function start() {
+  fs.createWriteStream(fname);
   console.log('Type some text to write to the file, or type "exit" to quit');
 
   rl.on('line', (input) => {
